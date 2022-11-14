@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(184, 180, 180);
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        "area1 area1 area1"
+        "area2 area2 area3"
+        "area4 area4 area4";
+    gap: 10px;
+
+}
+
+#header {
+    grid-area: area1;
+    background-color: goldenrod;
+    padding: 0.5rem;
+}
+
+#main {
+    grid-area: area3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 275px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+#card__title {
+    font-size: 1.2rem;
+    border: solid 1px black;
+    text-align: center;
+    background-color: yellow;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#card_image {
+    /* margin: 20px 0px; */
+}
+
+#card__bike-name {
+    font-size: 1rem;
+    padding: 10px 0px;
+}
+
+#card__form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: yellow;
+    border: solid 1px black;
+    border-radius: 5px;
+    flex-grow: 1;
+
+}
+
+#card__feature-label {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#card__feature-value {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+#card__feature {
+    width: 100%;
+}
+
+.card-value {
+    width: 30%;
+    background-color: yellow;
+    border: none;
+    outline: none;
+}
+
+#btn {
+    padding: 10px 20px;
+}
+
+#btn:hover {
+    background-color: aquamarine;
+    border: none;
+}
+
+#section {
+    grid-area: area2;
+}
+
+#footer {
+    grid-area: area4;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
