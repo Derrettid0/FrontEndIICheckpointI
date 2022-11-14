@@ -30,8 +30,8 @@ body {
 #main {
     grid-area: area3;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
     margin-right: 20px;
@@ -72,6 +72,17 @@ body {
 #card__form {
     display: flex;
     justify-content: center;
+    align-items: start;
+    background-color: yellow;
+    border: solid 1px black;
+    border-radius: 5px;
+    flex-grow: 1;
+
+}
+
+#criado {
+    display: flex;
+    justify-content: space-around;
     align-items: start;
     background-color: yellow;
     border: solid 1px black;
