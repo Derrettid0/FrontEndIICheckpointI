@@ -1,141 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-html {
-    background-color: rgb(184, 180, 180);
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 50px 1fr 50px;
-    grid-template-areas:
-        "area1 area1 area1"
-        "area2 area2 area3"
-        "area4 area4 area4";
-    gap: 10px;
+    html {
+        background-color: rgb(184, 180, 180);
+    }
 
-}
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas:
+            "area1 area1 area1"
+            "area2 area2 area3"
+            "area4 area4 area4";
+        gap: 10px;
 
-#header {
-    grid-area: area1;
-    background-color: goldenrod;
-    padding: 0.5rem;
-}
+    }
 
-#main {
-    grid-area: area3;
-    display: flex;
-    
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    margin-right: 20px;
-}
+    #header {
+        grid-area: area1;
+        background-color: goldenrod;
+        padding: 0.5rem;
+    }
 
-#card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    width: 275px;
-    height: 500px;
-    border: solid 1px black;
-    border-radius: 5px;
-    background-color: whitesmoke;
-}
+    #main {
+        grid-area: area3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-right: 20px;
+    }
 
-#card__title {
+    #card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+        width: 275px;
+        height: 500px;
+        border: solid 2px black;
+        border-radius: 11px;
+        background-color: whitesmoke;
+    }
+
+    #card_image {
+        /* margin: 20px 0px; */
+    }
+
+    #card__bike-name {
+        font-size: 1rem;
+        padding: 10px 0px;
+    }
+
+
+    #card__form ::after {
+content:'';
+position:absolute;
+left:0;
+display:absolute;
+height:2px;
+width:100%;
+margin-top:28px;
+background-color:black;
+
+    }
+
+
+    #card__form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        background-color: yellow;
+        border: solid 2px black;
+        border-radius: 5px;
+        flex-grow: 1;
+
+    }
+
+    #card__feature-label {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    #card__feature-value {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    #card__feature {
+        width: 100%;
+    }
+
+    .card-value {
+        width: 30%;
+        background-color: yellow;
+        border: none;
+        outline: none;
+    }
+
+    #btn {
+        padding: 10px 37px;
+        border-radius: 12px; 
+        background-color:#e3e63b ;
+        border:solid 2px black;
+    }
+
+    #btn:hover {
+       
+        background-color: #ffff00;
+        transition: 0.5s;
+    }
+
+
+    #btn {
+        color:black;
+    }
+
+
+    #section {
+        grid-area: area2;
+    }
+
+    #footer {
+        grid-area: area4;
+        background-color: goldenrod;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .escopo{
+        display: flex;
+        
+    }
+
+    .card__title {
+        font-size: 1.2rem;
+        border: solid 2px black;
+        background-color: yellow;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        display: flex;
+    }
+
+
+    .class {
     font-size: 1.2rem;
-    border: solid 1px black;
-    text-align: center;
+    border: solid 2px black;
     background-color: yellow;
-    width: 100%;
+    width: 17%;
     padding: 8px;
     margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-#card_image {
-    /* margin: 20px 0px; */
-}
-
-#card__bike-name {
-    font-size: 1rem;
-    padding: 10px 0px;
-}
-
-#card__form {
+    border-radius: 25px;
+    margin-left: -2px;
     display: flex;
-    justify-content: center;
-    align-items: start;
-    background-color: yellow;
-    border: solid 1px black;
-    border-radius: 5px;
-    flex-grow: 1;
-
-}
-
-#criado {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    background-color: yellow;
-    border: solid 1px black;
-    border-radius: 5px;
-    flex-grow: 1;
-
-}
-
-#card__feature-label {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-#card__feature-value {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 100%;
-}
-
-#card__feature {
-    width: 100%;
-}
-
-.card-value {
-    width: 30%;
-    background-color: yellow;
-    border: none;
-    outline: none;
-}
-
-#btn {
-    padding: 10px 20px;
-}
-
-#btn:hover {
-    background-color: aquamarine;
-    border: none;
-}
-
-#section {
-    grid-area: area2;
-}
-
-#footer {
-    grid-area: area4;
-    background-color: goldenrod;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
