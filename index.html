@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -16,29 +16,38 @@
     </header>
 
     <main id="main">
-        <card id="card">    
-            <div class="escopo">
-            <div class="class">C3</div>
-            <div class="card__title">Motos Custom </div>
+        <card id="card">
+            <div class="card__header">
+                <div class="card__cod">C3</div>
+                <div class="card__title">Motos Custom</div>
             </div>
-            <img id="card_image" src="https://picsum.photos/150/100" alt="">
-            <h2 id="card__bike-name">Royal Enfield Meteor Stellar Black</h2>
+
+            <!-- <img id="card__image" src="https://picsum.photos/150/100" alt=""> -->
+            <label for="card__image">Selecione a imagem da sua moto
+                <input type="file" name="image" id="card__image">
+            </label>
+
             <form id="card__form" action="." method="post">
-                <div id="card__feature-label">
-                    <label for="Km/h">Km/h</label>
-                    <label for="HP">HP</label>
-                    <label for="RPM">RPM</label>
-                    <label for="Cilindradas">Cilindradas</label>
-                    <label for="Cilindros">Cilindros</label>
-                    <label for="Peso">Peso</label>
+                <div id="card__bike-name">
+                    <input type="text" id="bike-name" class="card-name" maxlength="25" placeholder="Digite o nome da moto">
                 </div>
-                <div id="card__feature-value">
-                    <input type="text" id="Km/h" class="card-value">
-                    <input type="text" id="HP" class="card-value">
-                    <input type="text" id="RPM" class="card-value">
-                    <input type="text" id="Cilindradas" class="card-value">
-                    <input type="text" id="Cilindros" class="card-value">
-                    <input type="text" id="Peso" class="card-value">
+                <div id="card__yellow-box">
+                    <div id="card__feature-label">
+                        <label for="Km/h">Km/h</label>
+                        <label for="HP">HP</label>
+                        <label for="RPM">RPM</label>
+                        <label for="Cilindradas">Cilindradas</label>
+                        <label for="Cilindros">Cilindros</label>
+                        <label for="Peso">Peso</label>
+                    </div>
+                    <div id="card__feature-value">
+                        <input type="text" id="Km/h" class="card-value">
+                        <input type="text" id="HP" class="card-value">
+                        <input type="text" id="RPM" class="card-value">
+                        <input type="text" id="Cilindradas" class="card-value">
+                        <input type="text" id="Cilindros" class="card-value">
+                        <input type="text" id="Peso" class="card-value">
+                    </div>
                 </div>
             </form>
         </card>
