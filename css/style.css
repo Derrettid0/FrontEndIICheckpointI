@@ -60,12 +60,9 @@ body {
 }
 
 #card__image {
-    /* margin: 20px 0px; */
     background-color: yellow;
     height: 150px;
-    /* display: none; */
-    opacity: 0;
-
+    width: 100%;
 }
 
 #card__bike-name {
@@ -74,7 +71,6 @@ body {
 }
 
 #card__form {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
